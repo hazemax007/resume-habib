@@ -1,0 +1,189 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 13px;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 22%;
+    background-color: #173555;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #ffffff;
+}
+
+.profile h1 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.info {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.info p {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #4f4f7f;
+    padding-bottom: 4px;
+}
+
+.section ul {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.section ul li {
+    font-size: 13px;
+    margin-bottom: 6px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.section ul li::before {
+    content: "•";
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+}
+
+/* Main content */
+.main-content {
+    width: 78%;
+    background-color: #ffffff;
+    padding: 40px 40px;
+    font-size: 13px;
+}
+
+.main-content h1 {
+    font-size: 20px;
+    color: #1d1d39;
+    margin-bottom: 8px;
+}
+
+.domaines {
+    font-size: 13px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.presentation {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.main-content .section {
+    margin-top: 30px; 
+}
+
+.main-content .section h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #1d1d39;
+    border-bottom: 1px solid #007bff;
+    padding-bottom: 4px;
+}
+
+.main-content .section h3 {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #0056b3;
+    margin-top: 20px;
+}
+
+.main-content .section ul {
+    list-style-type: none;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.main-content .section ul li {
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.main-content .section ul li::before {
+    content: "-";
+    color: #007bff;
+    position: absolute;
+    left: 0;
+}
+
+.main-content .section p {
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Modification des sections Expériences et Projets */
+.main-content .section h2 {
+    margin-top: 20px;
+    font-size: 18px; /* Augmenter la taille du titre de la section */
+}
+
+.main-content .section p, 
+.main-content .section ul li {
+    font-size: 14px; /* Augmenter la taille de la police du texte */
+    margin-bottom: 10px; /* Ajouter un espacement entre les éléments */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar, .main-content {
+        width: 100%;
+        padding: 30px;
+    }
+}
